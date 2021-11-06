@@ -1,0 +1,254 @@
+@import "../variable";
+/*********************************************************SIDE-NAVIGATION******************************/
+.SideNavigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  border-right: 1px solid $grey-border;
+  height: 100%;
+}
+
+.SideNavigationItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin: 40px 0;
+}
+
+/**********************************************NAVIGATION-BAR******************************************/
+.NavigationBar {
+  .nav-link {
+    color: $grey-text;
+    border: none;
+    padding: 20px;
+
+    span {
+      padding: 0px 10px;
+    }
+  }
+
+  .nav-link:hover {
+    border-bottom: 1px solid $pink-text;
+    margin: 0;
+  }
+}
+
+.NavigationItems {
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.CopyLink {
+  display: flex;
+  //position: relative;
+  align-items: center;
+  border-radius: 25px;
+  justify-content: space-between;
+  background-color: $peach-background;
+  font-size: 13px;
+  padding: 5px 5px 5px 20px;
+  width: 324px;
+  margin: 5px 40px 5px 0;
+
+  button {
+    background-color: #fff;
+    color: $pink-text;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 900;
+  }
+}
+
+/**********************************************MENU*********************************/
+.Menu {
+  background-color: $peach-background;
+  overflow: hidden auto;
+  height: calc(100vh - 64px);
+}
+
+.MenuContent {
+  background-color: #fff;
+  margin: 2px 0px;
+  padding: 20px;
+  text-align: center;
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/*************************************************MenuCard***********************************/
+
+
+.MenuCard {
+  background-color: #fff;
+  margin: 10px 0px;
+  border-radius: 12px;
+  border: none;
+
+  .page-header {
+    border-bottom: 1px solid $grey-border;
+    padding: 10px 0;
+
+    span {
+      background-color: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 25px;
+      font-size: 10px;
+    }
+  }
+}
+
+.MenuCard:hover {
+  box-shadow: #bb89880a 0px 15px 30px;
+  cursor: pointer;
+}
+
+.CardDetail {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+
+  img {
+    background-color: $grey-border;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+}
+
+.MenuCardAlert {
+  background-color: #fff;
+  margin: 10px 0px;
+  border-radius: 12px;
+  border: 1px solid #eb575780;
+  color: #999999;
+
+  .MenuCardAlert:hover {
+    box-shadow: #bb89880a 0px 15px 30px;
+    cursor: pointer;
+  }
+
+  .page-header {
+    border-bottom: 1px solid $grey-border;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .page-header-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 10%;
+    }
+
+    span {
+      background-color: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 25px;
+      font-size: 10px;
+    }
+  }
+}
+
+.CardDetailAlert {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+
+  img {
+    background-color: $grey-border;
+    padding: 12px;
+    border-radius: 12px;
+    opacity: 0.5;
+  }
+
+
+  svg {
+    color: rgb(237, 87, 87);
+  }
+
+  p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+/************************************************MOBILE-VIEW*************************/
+
+.Mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%
+}
+
+.MobileView {
+  width: 320px;
+  height: 668px;
+  border-radius: 35px;
+  border: 4px solid rgb(51, 51, 51);
+  background-color: $peach-background;
+
+  .MobileDetail {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .profile-image {
+      height: 60px;
+
+      span {
+        background-color: #fff;
+        padding: 35px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+/***************************************************CHAT-WIDGET**************************************/
+
+.ChatContainer {
+  padding-bottom: 16px;
+  position: absolute;
+  bottom: 0;
+
+  ChatButton {
+    //position: relative;
+    background-color: #f27b7c;
+  }
+}
+
+/***********************************************TOGGLE-BUTTON*******************************************/
+
+.ToggleButton {
+  text-align: center;
+  margin-top: -2px;
+
+  button {
+
+    border: none;
+    background-color: #fff;
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 0 0 20px 20px;
+
+  }
+}

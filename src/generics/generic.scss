@@ -1,0 +1,91 @@
+@import "../variable";
+
+.CustomNav {
+  width: 80px;
+  color: $grey-text;
+  border-radius: 8px;
+  padding: 5px;
+  line-height: 30px;
+  font-size: 14px;
+  margin: 5px;
+  text-align: center;
+
+  &:hover {
+    background-color: $grey-border;
+    cursor: pointer;
+  }
+}
+.active {
+  background-color: $pink-background;
+  color: $pink-text;
+}
+
+.Custom-Block-Icons {
+  text-align: center;
+  cursor: pointer;
+
+  img {
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+/********************************************IconCardHover***********************************/
+.IconCardHover {
+  width: 228px;
+  padding: 12px;
+  background: rgb(34, 34, 34);
+  box-shadow: #00000029 10px 24px 66px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  border-radius: 12px;
+  font-size: 12px;
+
+  .IconCardHoverImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffdcd6;
+    border-radius: 12px;
+
+    img {
+      padding: 20px;
+    }
+  }
+
+}
+
+.showHoverCards {
+  display: none;
+}
+
+.showHover:hover .showHoverCards {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  width: 228px;
+  background: #222222;
+  box-shadow: #00000029 10px 24px 66px;
+  color: white;
+  text-align: left;
+  border-radius: 12px;
+  z-index: 90;
+  font-size: 12px;
+  right: 0;
+}
+
+.showHover {
+  position: relative;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
