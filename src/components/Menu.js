@@ -15,8 +15,6 @@ const Menu = () => {
 
     const [toggleMenu, setToggleMenu] = useState(true);
 
-    const menuContent = [{headerText: "Add Block"}];
-
     const menuCard = [
         {
             id: 1,
@@ -65,7 +63,6 @@ const Menu = () => {
                 <div className={"Menu p-4"}>
                     <MenuContent toggleMenu={toggleMenu}/>
                     <ToggleButton setToggleMenu={setToggleMenu} toggleMenu={toggleMenu}/>
-                    {/*<MenuContent headerText={"Monetizable Block"}/>*/}
                     {
                         menuCard.map(item => {
                             return <div key={item.id}><MenuCard {...item}/>

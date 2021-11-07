@@ -1,7 +1,7 @@
 import React from 'react';
 import {ChatRightDotsFill} from "react-bootstrap-icons";
 
-const ChatButton = () => {
+const   ChatButton = () => {
     return (
         <div className={"ChatContainer"}>
           <div className={"ChatButton"}>

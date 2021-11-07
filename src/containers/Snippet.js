@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import SideNavigation from "../components/SideNavigation";
 import Dashboard from "../components/Dashboard";
-import ChatButton from "../components/ChatButton";
+import '../components/component.scss';
+
 
 class Snippet extends Component {
     render() {
