@@ -22,13 +22,13 @@ const SideNavigation = () => {
                 <div>
                     <CustomNav
                         navActive={"active"}
-                        navIcon={<i className="far fa-clipboard"></i>}
+                        navIcon={<i className="far fa-clipboard"/>}
                         navText={"My Page"}/>
-                    <CustomNav navIcon={<i className="fas fa-crown"></i>}
+                    <CustomNav navIcon={<i className="fas fa-crown"/>}
                                navText={"Monetize"}/>
-                    <CustomNav navIcon={<i className="far fa-chart-bar"></i>}
+                    <CustomNav navIcon={<i className="far fa-chart-bar"/>}
                                navText={"Analytics"}/>
-                    <CustomNav navIcon={<i className="fas fa-dollar-sign"></i>}
+                    <CustomNav navIcon={<i className="fas fa-dollar-sign"/>}
                                navText={"Earnings"}/>
                     <CustomNav navIcon={<EmojiSmile/>}
                                navText={"Referrals"}/>
@@ -36,8 +36,8 @@ const SideNavigation = () => {
                                navText={"Settings"}/>
                 </div>
                 <div>
-                    <CustomNav navIcon={<i className="far fa-moon"></i>}/>
-                    <CustomNav navIcon={<i className="fas fa-sign-out-alt"></i>}
+                    <CustomNav navIcon={<i className="far fa-moon"/>}/>
+                    <CustomNav navIcon={<i className="fas fa-sign-out-alt"/>}
                                navText={"Logout"}/>
                 </div>
             </div>

@@ -1,9 +1,13 @@
-import React from 'react';
-import Header from "./Header";
+import React, {Fragment} from 'react';
+import Menu from "./Menu";
+import NavigationBar from "./NavigationBar";
 
 const Dashboard = () => {
     return (
-        <Header/>
+       <Fragment>
+           <NavigationBar/>
+           <Menu/>
+       </Fragment>
     );
 };
 
